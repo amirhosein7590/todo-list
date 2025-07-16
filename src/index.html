@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body class="bg-[#172554]">
+    <div
+      id="inputContainer"
+      class="mx-auto mt-10 mb-2 w-[400px] relative flex flex-col justify-center"
+    >
+      <p class="mb-[10px] text-white text-center">
+        Add New Todo <span style="font-size: 18px">...</span>
+      </p>
+      <form action="" class="flex flex-col">
+        <div class="input-container flex items-center p-[6px] bg-[#120f49]">
+          <input
+            class="border-0 w-11/12 outline-none text-lg bg-transparent text-white"
+            type="text"
+            id="input"
+            autocomplete="off"
+            maxlength="32"
+          />
+          <button
+            class="add-button w-1/12 bg-transparent border-0 outline-none text-white cursor-pointer select-none"
+          >
+            <img src="../public/images/add_icon.svg" alt="" />
+          </button>
+        </div>
+        <div
+          class="filters my-5 relative flex justify-between items-center"
+        >
+          <button class="bg-[#120f49] text-sm py-1 px-5 rounded-lg text-white">
+            all
+          </button>
+          <button class="bg-[#120f49] text-sm py-1 px-5 rounded-lg text-white">
+           completed
+          </button>
+          <button class="bg-[#120f49] text-sm py-1 px-5 rounded-lg text-white">
+            inCompleted
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <ul
+      id="todoContainer"
+      class="w-[400px] transition duration-300 mx-auto h-[200px] overflow-y-auto"
+    ></ul>
+    <div
+      class="export-container group absolute bottom-2 cursor-pointer left-2 bg-[#1E40AF] rounded-xl py-2 px-5 text-white"
+    >
+      <p class="text-lg">export</p>
+      <ul
+        class="absolute left-[-1000px] transition duration-300 group-hover:left-full top-0 flex justify-between items-center"
+      >
+        <li class="mx-4 pdf bg-[#1E40AF] py-2 px-3 rounded-lg">
+          <button>PDF</button>
+        </li>
+        <li class="mx-4 word bg-[#1E40AF] py-2 px-3 rounded-lg">
+          <button>WORD</button>
+        </li>
+        <li class="mx-4 excel bg-[#1E40AF] py-2 px-3 rounded-lg">
+          <button>EXCEL</button>
+        </li>
+      </ul>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/jspdf-autotable@5.0.2/dist/jspdf.plugin.autotable.min.js
+"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docx@7.3.0/build/index.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

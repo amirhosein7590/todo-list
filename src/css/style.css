@@ -1,0 +1,47 @@
+@import url('https://v1.fontapi.ir/css/Estedad');
+
+*{
+    box-sizing: border-box;
+    font-family:Estedad,sans-serif;
+}
+
+.completed::after{
+  content:'';
+  position: absolute;
+  height: 2px;
+  top: 50%;
+  left: 0;
+  background-color: rgba(0,0,0,0.7);
+  width: 28%;
+}
+
+#todoContainer::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+#todoContainer::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #AAAAAA;
+}
+
+#todoContainer::-webkit-scrollbar-track:hover {
+  background-color: #AAAAAA;
+}
+
+#todoContainer::-webkit-scrollbar-track:active {
+  background-color: #AAAAAA;
+}
+
+#todoContainer::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #1E40AF;
+}
+
+#todoContainer::-webkit-scrollbar-thumb:hover {
+  background-color: #1E40AF;
+}
+
+#todoContainer::-webkit-scrollbar-thumb:active {
+  background-color: #1E40AF;
+}
