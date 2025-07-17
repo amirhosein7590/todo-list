@@ -593,6 +593,16 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mx-\[10px\] {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -639,6 +649,22 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-4\/12 {
+  width: 33.333333%;
+}
+
+.w-8\/12 {
+  width: 66.666667%;
+}
+
+.w-9\/12 {
+  width: 75%;
+}
+
+.w-3\/12 {
+  width: 25%;
 }
 
 .cursor-pointer {
@@ -796,4 +822,22 @@ video {
 
 .group:hover .group-hover\:left-full {
   left: 100%;
+}
+
+@media (min-width: 768px) {
+  .md\:w-\[400px\] {
+    width: 400px;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:bg-red-600 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(220 38 38 / var(--tw-bg-opacity, 1));
+  }
 }

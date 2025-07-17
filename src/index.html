@@ -11,7 +11,7 @@
   <body class="bg-[#172554]">
     <div
       id="inputContainer"
-      class="mx-auto mt-10 mb-2 w-[400px] relative flex flex-col justify-center"
+      class="mx-auto mt-10 mb-2 md:w-[400px] w-10/12 relative flex flex-col justify-center"
     >
       <p class="mb-[10px] text-white text-center">
         Add New Todo <span style="font-size: 18px">...</span>
@@ -49,22 +49,22 @@
 
     <ul
       id="todoContainer"
-      class="w-[400px] transition duration-300 mx-auto h-[200px] overflow-y-auto"
+      class="md:w-[400px] w-10/12 transition duration-300 mx-auto h-[200px] overflow-y-auto"
     ></ul>
     <div
       class="export-container group absolute bottom-2 cursor-pointer left-2 bg-[#1E40AF] rounded-xl py-2 px-5 text-white"
     >
-      <p class="text-lg">export</p>
+      <p class="md:text-lg">export</p>
       <ul
         class="absolute left-[-1000px] transition duration-300 group-hover:left-full top-0 flex justify-between items-center"
       >
-        <li class="mx-4 pdf bg-[#1E40AF] py-2 px-3 rounded-lg">
+        <li class="mx-4 pdf bg-[#1E40AF] py-2 px-3 rounded-lg text-sm md:text-lg">
           <button>PDF</button>
         </li>
-        <li class="mx-4 word bg-[#1E40AF] py-2 px-3 rounded-lg">
+        <li class="mx-4 word bg-[#1E40AF] py-2 px-3 rounded-lg text-sm md:text-lg">
           <button>WORD</button>
         </li>
-        <li class="mx-4 excel bg-[#1E40AF] py-2 px-3 rounded-lg">
+        <li class="mx-4 excel bg-[#1E40AF] py-2 px-3 rounded-lg text-sm md:text-lg">
           <button>EXCEL</button>
         </li>
       </ul>
